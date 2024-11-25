@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excel Enterprises</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <img src="your-logo.png" alt="Logo" class="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <div class="header-container">
-        <img src="xlzone_logo_.png" alt="XLzone Logo" class="logo">
-        <h1>Excel Enterprises</h1>
-    </div>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
-</header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Excel Enterprises</h1>
+        <p>Your one-stop solution for industrial parts, sensors, and aerosol paints.</p>
+        <a href="#products" class="cta-button">Explore Products</a>
+    </section>
 
-<section id="about" class="about-section">
-    <h2>About Us</h2>
-    <p>Excel Enterprises is a trusted supplier of high-quality aerosol paints and industrial parts and sensors. 
-       Our commitment to excellence ensures the best products for our customers.</p>
-</section>
-
-<section id="products" class="products-section">
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="industrial_sensor.jpeg" alt="Sensor">
+                <h3>Industrial Sensors</h3>
+                <p>High-quality industrial sensors for precision and reliability.</p>
+            </div>
+            <div class="product-card">
+                <img src="spray_paint_1" alt="Spray Paint">
+                <h3>Aerosol Spray Paints</h3>
+                <p>Vibrant, durable paints for all surfaces.</p>
+            </div>
+        </div>
+    </section>
+<!--     <section id="products" class="products-section">
     <h2>Our Products</h2>
     <div class="products">
         <h3>Aerosol Paints</h3>
@@ -36,27 +52,22 @@
         <h3>Industrial Parts and Sensors</h3>
         <img src="industrial_sensor.jpeg" alt="Industrial Sensor">
     </div>
-</section>
+</section> -->
 
-<section id="contact" class="contact-section">
-    <h2>Contact Us</h2>
-    <p><strong>Registered Office:</strong> 
-        <a href="https://www.google.com/maps?q=837+Old+LR+Market" target="_blank">
-            837 Old LR Market
-        </a>
-    </p>
-    <p><strong>Works:</strong> 
-        <a href="https://www.google.com/maps?q=3241+Ram+Bazar,+Mori+Gate,+Delhi+110006" target="_blank">
-            3241 Ram Bazar, Mori Gate, Delhi 110006
-        </a>
-    </p>
-    <p><strong>Contact Number:</strong> 9891200833</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-details">
+            <p><strong>Registered Office:</strong> 837 Old LR Mkt, Mori Gate, Delhi 110006</p>
+            <a href="https://goo.gl/maps/sample1" target="_blank" class="map-link">View on Google Maps</a>
+            <p><strong>Works:</strong> 3241 Ram Bazar, Delhi 110006</p>
+            <a href="https://goo.gl/maps/sample2" target="_blank" class="map-link">View on Google Maps</a>
+            <p><strong>Phone:</strong> +91 9891200833</p>
+        </div>
+    </section>
 
-
-<footer>
-    <p>&copy; 2024 Excel Enterprises. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>© 2024 Excel Enterprises. All rights reserved.</p>
+    </footer>
 </body>
 </html>

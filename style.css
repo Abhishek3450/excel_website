@@ -8,15 +8,13 @@ body {
     background: linear-gradient(to bottom, #ffffff, #f0f0f5);
 }
 
-/* Header styles */
 /* Header styling */
 header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
 .header-container {
@@ -28,7 +26,7 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     position: absolute;
     left: 20px; /* Aligns the logo to the top-left */
 }
@@ -56,7 +54,6 @@ nav a {
 nav a:hover {
     background-color: #555;
 }
-
 
 /* Section styles */
 section {
@@ -115,4 +112,82 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
     font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* For smaller screens (phones) */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .products img {
+        max-width: 100%;
+    }
+}
+
+/* For tablets (medium screens) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+/* For larger screens (laptops/desktops) */
+@media (min-width: 1025px) {
+    .header-container {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .products img {
+        max-width: 250px;
+    }
 }
